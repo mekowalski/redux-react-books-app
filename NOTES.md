@@ -1,3 +1,3 @@
-- [] Create boilerplate of `index.js` with:
+- [x] Create boilerplate of `index.js` with:
   - import statements, component structure and `.render()`
-- [] Create App component and import
+- [x] Create App component and import
