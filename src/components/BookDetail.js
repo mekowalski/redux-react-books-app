@@ -8,12 +8,24 @@ const BookDetail = ({ book }) => {
 
   return (
     <div>
+      <h3>Book Details</h3>
+      <p>
       {book.title}
+      <br />
+      {book.author}
+      <br />
+      {book.genre}
+      <br />
+      {book.publishedDate}
+      <br />
+      {book.pages}
+      </p>
     </div>
   )
 }
 
 const mapStateToProps = (state) => {
+  console.log(state)
   return { book: state.selectedBook }
 }
 
