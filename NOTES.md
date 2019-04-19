@@ -49,3 +49,6 @@
   - configure provider tag at the top of component hierarchy and pass a reference of redux store
   - create provider instance and wrap App component with it
   - Any component inside component hierarchy can make use of `connect` to communicate with `provider` which communicates with all data in store
+
+- React Side
+- [] BookList component: hook up to App component
