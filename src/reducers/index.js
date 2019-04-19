@@ -18,7 +18,6 @@ const selectedBookReducer = (selectedBook=null, action) => {
   return selectedBook
 }
 
-//keys in this object will be the keys that show in State object
 export default combineReducers({
   books: booksReducer,
   selectedBook: selectedBookReducer

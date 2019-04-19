@@ -1,16 +1,13 @@
-//3rd party dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux'; //component from react-redux library
-import { createStore } from 'redux'; //function from redux library
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-//my own written code
-//grouping is preference-based, i like the separation
 import App from './components/App';
 import reducers from './reducers';
 
 ReactDOM.render(
-  <Provider store={createStore(reducers)}> //result of calling createStore and passing in reducers
+  <Provider store={createStore(reducers)}>
     <App />
   </Provider>,
   document.querySelector('#root')
