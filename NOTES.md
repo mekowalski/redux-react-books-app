@@ -52,3 +52,7 @@
 
 - React Side
 - [] BookList component: hook up to App component
+
+- [] create instance of Connect component
+  - configure to reach Provider and tell it that it wants the list of books inside the application
+  - defined in BookList
