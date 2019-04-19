@@ -89,4 +89,6 @@
   - BookDetail doesn't have functionality to update the `state` therefore no wired up action creators
 
 - [] actually show details of selected book
-  - destructure book property in order to keep code DRY and reference attributes 
+  - destructure book property in order to keep code DRY and reference attributes
+  - `TypeError: Cannot read property 'title' of null` refers to when the app first runs, there isn't a selected book and book state is set to `null` therefore the Uncaught TypeError
+  - create conditional to fix error
