@@ -20,9 +20,19 @@
 
 ## Redux Design
 - Reducers: the 2 pieces of State in application
+  - Static, unchanging list of books in Reducer(technically overkill)
   - [] List of books
   - [] Currently selected books
 
 - Action Creators: change the State in application
   - Dispatch an Action and tell selected book reducer to update data to reflect currently picked book
   - [] Select Book
+
+- Need to get State to be called in BookList
+
+- Project Structure for Redux
+  - `/src`: all code will be in the src folder
+    - `/actions`: all files related to action creators
+    - `/components`: all files related to components
+    - `/reducers`: all files related to reducers
+    - `index.js`: sets up BOTh React and Redux sides of the app
