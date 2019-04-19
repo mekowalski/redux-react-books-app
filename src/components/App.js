@@ -1,9 +1,10 @@
 import React from 'react';
+import BookList from './BookList'
 
 const App = () => {
   return (
     <div>
-      Welcome to the Book Club
+      <BookList />
     </div>
   )
 }
