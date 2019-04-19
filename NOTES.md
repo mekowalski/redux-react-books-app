@@ -35,7 +35,7 @@
     - `/actions`: all files related to action creators
     - `/components`: all files related to components
     - `/reducers`: all files related to reducers
-    - `index.js`: sets up BOTh React and Redux sides of the app
+    - `index.js`: sets up BOTH React and Redux sides of the app
 
 - [x] Create Actions DIR
   - [x] house `selectBook` action creator
@@ -71,10 +71,13 @@
 
 - Going to use Semantic UI Grid system to add better styling/layout
 
-- [] Eventually wire of the Select button
-- [] Also create event handler for Select button
+- [x] Eventually wire of the Select button
+- [x] Also create event handler for Select button
   - this will help show a detail of the book on the right side of the screen
   - update data/State of redux store anytime a book is selected
   - update data with redux, call an action creator
+  - ANYTIME THE BUTTON IS CLICKED, THE REDUX STORE IS UPDATED!!!
   - `connect()` can be used to get action creators correctly in `BookList`
   - [x] import action creator and wire it to `connect`
+
+- [] BookDetail: show info on currently selected book

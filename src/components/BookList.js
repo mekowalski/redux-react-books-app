@@ -32,10 +32,7 @@ class BookList extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state)
   return { books: state.books }
 }
 
 export default connect(mapStateToProps, { selectBook })(BookList)
-//as a 2nd argumet, an argument with key of selectBook and value of selectBook(that was just imported)
-//connect() will take selectBook and pass it to THIS component as prop
