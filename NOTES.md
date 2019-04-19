@@ -36,3 +36,7 @@
     - `/components`: all files related to components
     - `/reducers`: all files related to reducers
     - `index.js`: sets up BOTh React and Redux sides of the app
+
+- [] Create Actions DIR
+  - [] house `selectBook` action creator
+- [] Create Reducers DIR
