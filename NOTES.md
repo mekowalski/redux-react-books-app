@@ -40,4 +40,5 @@
 - [x] Create Actions DIR
   - [x] house `selectBook` action creator
 - [] Create Reducers DIR
-  
+  - [] book list: return static list of books
+  - [] selected book: allow user to select specific book
