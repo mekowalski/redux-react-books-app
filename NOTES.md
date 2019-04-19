@@ -50,9 +50,10 @@
   - create provider instance and wrap App component with it
   - Any component inside component hierarchy can make use of `connect` to communicate with `provider` which communicates with all data in store
 
-- React Side
-- [] BookList component: hook up to App component
+## React Side
+- [x] BookList component: hook up to App component
 
 - [] create instance of Connect component
   - configure to reach Provider and tell it that it wants the list of books inside the application
   - defined in BookList
+  - configure the connect() call
