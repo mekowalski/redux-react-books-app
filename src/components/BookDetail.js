@@ -1,7 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const BookDetail = () => {
+//this should get a props object that contains the currently selected book
+const BookDetail = (props) => {
+  console.log(props)
   return (
     <div>
       Song detaillllllssss
@@ -15,4 +17,5 @@ const mapStateToProps = (state) => {
   return { book: state.selectBook }
 }
 
-export default BookDetail
+//wire up connect() with mapStateToProps
+export default connect(mapStateToProps)(BookDetail)
