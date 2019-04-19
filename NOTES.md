@@ -69,4 +69,8 @@
   3. Always define `mapStateToProps` which will always get an argument of `state`
   4. `mapStateToProps` will always return an object that will show up as props inside the component
 
+- Going to use Semantic UI Grid system to add better styling/layout
+
 - [] Eventually wire of the Select button
+
+- [] Also create event handler for Select button

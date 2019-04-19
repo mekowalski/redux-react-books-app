@@ -21,8 +21,8 @@ class BookList extends React.Component {
 
   render() {
     return (
-      <div>
-        A list of books
+      <div className='ui divided list'>
+        {this.renderList()}
       </div>
     )
   }
