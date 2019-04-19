@@ -15,8 +15,12 @@ class BookList extends React.Component {
 //although it can be called whatever
 //take State object(all the redux store data)
 //run a calculation that will cause data to show up as props inside the component
-const mapStateToProps = () => {
 
+//called with all of state inside redux store
+const mapStateToProps = (state) => {
+  console.log(state)
+  return state
 }
 
-export default connect()(BookList)
+//mapStateToProps will be the first argument to connect()
+export default connect(mapStateToProps)(BookList)
