@@ -10,3 +10,13 @@ const booksReducer = () = {
     { title: 'Honey and Milk' author: ' Rupi Kaur' publishedDate: 2014 genre: 'Poetry' pages: 208 }
   ]
 }
+
+//selected book
+//currently the IF statement isn't needed because there is only one action type
+//BUT legitimate React Redux apps will have many actions
+const selectedBookReducer = (selectedBook=null, action) => {
+  if (action.type === 'BOOK_SELECTED') {
+    return action.payload
+  }
+  return selectedBook
+}
