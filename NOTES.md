@@ -60,9 +60,13 @@
 
 - [] pull off books property and get it into the BookList component
   - BookList only cares about books, not selected books
+  - map over the list of books(this.props.books)
+  - return JSX to represent that book from the list
 
 - NOTE: make use of `react-redux` library to get data from redux store, into a component
   1. Always import `connect` at the top
   2. Always call connect()() and pass in the Component as 2nd call
   3. Always define `mapStateToProps` which will always get an argument of `state`
   4. `mapStateToProps` will always return an object that will show up as props inside the component
+
+- [] Eventually wire of the Select button
