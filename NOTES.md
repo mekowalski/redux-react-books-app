@@ -77,4 +77,4 @@
   - update data/State of redux store anytime a book is selected
   - update data with redux, call an action creator
   - `connect()` can be used to get action creators correctly in `BookList`
-  - [] import action creator and wire it to `connect`
+  - [x] import action creator and wire it to `connect`
