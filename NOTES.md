@@ -53,7 +53,16 @@
 ## React Side
 - [x] BookList component: hook up to App component
 
-- [] create instance of Connect component
+- [x] create instance of Connect component
   - configure to reach Provider and tell it that it wants the list of books inside the application
   - defined in BookList
   - configure the connect() call
+
+- [] pull off books property and get it into the BookList component
+  - BookList only cares about books, not selected books
+
+- NOTE: make use of `react-redux` library to get data from redux store, into a component
+  1. Always import `connect` at the top
+  2. Always call connect()() and pass in the Component as 2nd call
+  3. Always define `mapStateToProps` which will always get an argument of `state`
+  4. `mapStateToProps` will always return an object that will show up as props inside the component

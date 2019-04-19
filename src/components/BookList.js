@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 class BookList extends React.Component {
   render() {
+    //returned object(books)(from mapStateToProps) will show up as props inside the BookList component
+    //this.props === { books: state.books } <---contains array/list of all books
     return (
       <div>
         A list of books
@@ -18,8 +20,7 @@ class BookList extends React.Component {
 
 //called with all of state inside redux store
 const mapStateToProps = (state) => {
-  console.log(state)
-  return state
+  return { books: state.books }
 }
 
 //mapStateToProps will be the first argument to connect()
