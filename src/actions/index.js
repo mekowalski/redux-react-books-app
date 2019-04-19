@@ -1,4 +1,4 @@
-export const selectBook = (book) => {
+export const selectedBook = (book) => {
   return {
     type: 'BOOK_SELECTED',
     payload: book

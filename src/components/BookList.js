@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectBook } from '../actions';
+import { selectedBook } from '../actions';
 
 class BookList extends React.Component {
   renderList() {
@@ -10,7 +10,7 @@ class BookList extends React.Component {
           <div className='right floated content'>
             <button
               className='ui button primary'
-              onClick={() => this.props.selectBook(book)}
+              onClick={() => this.props.selectedBook(book)}
             >
               Select
             </button>
@@ -35,4 +35,4 @@ const mapStateToProps = (state) => {
   return { books: state.books }
 }
 
-export default connect(mapStateToProps, { selectBook })(BookList)
+export default connect(mapStateToProps, { selectedBook })(BookList)
