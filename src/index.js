@@ -10,6 +10,8 @@ import App from './components/App';
 import reducers from './reducers';
 
 ReactDOM.render(
-  <App />,
+  <Provider store={createStore(reducers)}> //result of calling createStore and passing in reducers
+    <App />
+  </Provider>,
   document.querySelector('#root')
 )

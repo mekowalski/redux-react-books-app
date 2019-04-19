@@ -45,6 +45,7 @@
 
 - [x] Wire up reducers with `combineReducers`
 
-- [] Eventually wire up Provider
+- [x] Eventually wire up Provider
   - configure provider tag at the top of component hierarchy and pass a reference of redux store
-  - create provider instance and wrap App component with it 
+  - create provider instance and wrap App component with it
+  - Any component inside component hierarchy can make use of `connect` to communicate with `provider` which communicates with all data in store
