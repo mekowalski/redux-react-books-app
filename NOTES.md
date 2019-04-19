@@ -4,6 +4,10 @@
   2. BookDetail: Renders details of specific book object, Title/Author/Genre/PublishedDate etc
 
 - React-Redux
+  1. [] Install Redux
+  2. [] Install React-Redux
+  - make sure React & Redux work together
+  - this app will help understand HOW react-redux works
 
 
 
