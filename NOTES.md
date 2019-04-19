@@ -13,3 +13,16 @@
   - import statements, component structure and `.render()`
 - [x] Create App component and import
 - [x] Hook up Semantic UI(of course)(woot woot)
+
+- App component is a functional component because it will no longer handle State, THIS IS WHAT REDUX IS FOR
+- Component-level State are used less with a few exceptions
+
+
+## Redux Design
+- Reducers: the 2 pieces of State in application
+  - [] List of books
+  - [] Currently selected books
+
+- Action Creators: change the State in application
+  - Dispatch an Action and tell selected book reducer to update data to reflect currently picked book
+  - [] Select Book
