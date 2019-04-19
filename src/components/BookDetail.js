@@ -1,11 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const BookDetail = (props) => {
-  console.log(props)
+const BookDetail = ({ book }) => {
   return (
     <div>
-      Song detaillllllssss
+      {book.title}
     </div>
   )
 }
