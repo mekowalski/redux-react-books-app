@@ -39,6 +39,11 @@
 
 - [x] Create Actions DIR
   - [x] house `selectBook` action creator
-- [] Create Reducers DIR
+- [x] Create Reducers DIR
   - [x] book list: return static list of books
-  - [] selected book: allow user to select specific book
+  - [x] selected book: allow user to select specific book
+
+- [x] Wire up reducers with `combineReducers`
+
+
+- [] Eventually wire up Provider

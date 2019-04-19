@@ -1,5 +1,5 @@
-//static list of books
-//static arry, no arguments needed, no action because this won't be changed
+import { combineReducers } from 'redux';
+
 const booksReducer = () = {
   return [
     { title: 'The Martian', author: 'Andy Weir', publishedDate: 2011, genre: 'Science Fiction' pages: 369 },
@@ -11,12 +11,15 @@ const booksReducer = () = {
   ]
 }
 
-//selected book
-//currently the IF statement isn't needed because there is only one action type
-//BUT legitimate React Redux apps will have many actions
 const selectedBookReducer = (selectedBook=null, action) => {
   if (action.type === 'BOOK_SELECTED') {
     return action.payload
   }
   return selectedBook
 }
+
+//keys in this object will be the keys that show in State object
+export default combineReducers({
+  books: booksReducer,
+  selectedBook: selectedBookReducer
+})
