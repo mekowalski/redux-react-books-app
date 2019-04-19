@@ -9,17 +9,11 @@ const BookDetail = ({ book }) => {
   return (
     <div>
       <h3>Book Details</h3>
-      <p>
-      {book.title}
-      <br />
-      {book.author}
-      <br />
-      {book.genre}
-      <br />
-      {book.publishedDate}
-      <br />
-      {book.pages}
-      </p>
+      <p>Title: {book.title}</p>
+      <p>Author: {book.author}</p>
+      <p>Genre: {book.genre}</p>
+      <p>Published Date: {book.publishedDate}</p>
+      <p>Page Count: {book.pages}</p>
     </div>
   )
 }
