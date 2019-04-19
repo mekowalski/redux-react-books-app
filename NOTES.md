@@ -81,3 +81,9 @@
   - [x] import action creator and wire it to `connect`
 
 - [] BookDetail: show info on currently selected book
+  - use `connect()`
+  - wrap `BookDetail` with `connect()` component
+  - define a `mapStateToProps` function to be notified by Provider about anytime the selected book changes
+  - provider will tell connect() about every time user clicks Select button
+  - `connect()` will take currently selected book and pass it as a prop to BookDetail component
+  - BookDetail doesn't have functionality to update the `state` therefore no wired up action creators
