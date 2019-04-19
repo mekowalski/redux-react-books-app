@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class BookList extends React.Component {
-  //helper method: take list of books, map over it and return a blob of JSX
   renderList() {
     return this.props.books.map((book) => {
       return (

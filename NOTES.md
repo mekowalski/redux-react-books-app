@@ -58,7 +58,7 @@
   - defined in BookList
   - configure the connect() call
 
-- [] pull off books property and get it into the BookList component
+- [x] pull off books property and get it into the BookList component
   - BookList only cares about books, not selected books
   - map over the list of books(this.props.books)
   - return JSX to represent that book from the list
@@ -72,5 +72,9 @@
 - Going to use Semantic UI Grid system to add better styling/layout
 
 - [] Eventually wire of the Select button
-
 - [] Also create event handler for Select button
+  - this will help show a detail of the book on the right side of the screen
+  - update data/State of redux store anytime a book is selected
+  - update data with redux, call an action creator
+  - `connect()` can be used to get action creators correctly in `BookList`
+  - [] import action creator and wire it to `connect`
